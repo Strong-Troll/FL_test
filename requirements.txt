@@ -1,4 +1,5 @@
 # server requirements
 
 fedops
-torch
+tensorflow
+keras
