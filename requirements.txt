@@ -1,5 +1,5 @@
 # server requirements
-
 fedops
-tensorflow
-keras
+torch
+torchvision
+scikit-learn
