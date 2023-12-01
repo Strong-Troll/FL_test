@@ -1,0 +1,27 @@
+task_id: 64f99bb134a89971e54d09d9
+num_epochs: 2
+batch_size: 128
+num_rounds: 3
+clients_per_round: 1
+learning_rate: 0.001
+random_seed: 42
+model_type: Pytorch
+model:
+  _target_: models.CIFAR100Classifier
+  output_size: 100
+dataset:
+  name: Cifar100
+  validation_split: 0.2
+server:
+  strategy:
+    _target_: flwr.server.strategy.FedAvg
+    fraction_fit: 1.0e-05
+    fraction_evaluate: 1.0e-06
+    min_fit_clients: ${clients_per_round}
+    min_available_clients: ${clients_per_round}
+    min_evaluate_clients: ${clients_per_round}
+wandb:
+  use: false
+  key: 001470b62268462c3c179bb6ac7ce0dfc64b657b
+  account: gyom1204
+  project: ${dataset.name}_${task_id}

@@ -29,7 +29,7 @@ server:
     min_evaluate_clients: ${clients_per_round}
 
 wandb: 
-  use: false # Whether to use wandb
+  use: true # Whether to use wandb
   key: '001470b62268462c3c179bb6ac7ce0dfc64b657b' # your wandb api key
   account: 'gyom1204'
   project: '${dataset.name}_${task_id}'

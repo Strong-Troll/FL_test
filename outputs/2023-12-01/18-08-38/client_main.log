@@ -1,0 +1,153 @@
+[2023-12-01 18:08:38,149][root][INFO] - FL_Task - {"dataset": "Cifar100", "start_execution_time": "2023-12-01 18:08:38"}
+[2023-12-01 18:08:44,686][root][INFO] - data_check - {"label_num": 0, "data_size": 294}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 1, "data_size": 298}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 2, "data_size": 289}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 3, "data_size": 312}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 4, "data_size": 302}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 5, "data_size": 300}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 6, "data_size": 284}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 7, "data_size": 316}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 8, "data_size": 313}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 9, "data_size": 303}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 10, "data_size": 285}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 11, "data_size": 306}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 12, "data_size": 284}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 13, "data_size": 293}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 14, "data_size": 297}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 15, "data_size": 307}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 16, "data_size": 291}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 17, "data_size": 312}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 18, "data_size": 320}
+[2023-12-01 18:08:44,687][root][INFO] - data_check - {"label_num": 19, "data_size": 301}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 20, "data_size": 306}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 21, "data_size": 300}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 22, "data_size": 287}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 23, "data_size": 289}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 24, "data_size": 288}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 25, "data_size": 303}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 26, "data_size": 293}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 27, "data_size": 314}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 28, "data_size": 311}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 29, "data_size": 300}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 30, "data_size": 309}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 31, "data_size": 299}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 32, "data_size": 298}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 33, "data_size": 295}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 34, "data_size": 304}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 35, "data_size": 307}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 36, "data_size": 305}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 37, "data_size": 311}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 38, "data_size": 302}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 39, "data_size": 285}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 40, "data_size": 291}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 41, "data_size": 301}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 42, "data_size": 312}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 43, "data_size": 302}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 44, "data_size": 300}
+[2023-12-01 18:08:44,688][root][INFO] - data_check - {"label_num": 45, "data_size": 304}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 46, "data_size": 304}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 47, "data_size": 291}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 48, "data_size": 310}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 49, "data_size": 304}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 50, "data_size": 298}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 51, "data_size": 302}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 52, "data_size": 323}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 53, "data_size": 292}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 54, "data_size": 295}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 55, "data_size": 303}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 56, "data_size": 275}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 57, "data_size": 270}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 58, "data_size": 302}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 59, "data_size": 315}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 60, "data_size": 307}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 61, "data_size": 286}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 62, "data_size": 310}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 63, "data_size": 304}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 64, "data_size": 302}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 65, "data_size": 293}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 66, "data_size": 294}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 67, "data_size": 300}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 68, "data_size": 299}
+[2023-12-01 18:08:44,689][root][INFO] - data_check - {"label_num": 69, "data_size": 290}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 70, "data_size": 288}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 71, "data_size": 291}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 72, "data_size": 321}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 73, "data_size": 300}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 74, "data_size": 298}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 75, "data_size": 298}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 76, "data_size": 291}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 77, "data_size": 305}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 78, "data_size": 298}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 79, "data_size": 310}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 80, "data_size": 283}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 81, "data_size": 311}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 82, "data_size": 306}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 83, "data_size": 296}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 84, "data_size": 309}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 85, "data_size": 302}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 86, "data_size": 302}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 87, "data_size": 306}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 88, "data_size": 314}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 89, "data_size": 311}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 90, "data_size": 310}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 91, "data_size": 305}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 92, "data_size": 278}
+[2023-12-01 18:08:44,690][root][INFO] - data_check - {"label_num": 93, "data_size": 289}
+[2023-12-01 18:08:44,691][root][INFO] - data_check - {"label_num": 94, "data_size": 297}
+[2023-12-01 18:08:44,691][root][INFO] - data_check - {"label_num": 95, "data_size": 297}
+[2023-12-01 18:08:44,691][root][INFO] - data_check - {"label_num": 96, "data_size": 283}
+[2023-12-01 18:08:44,691][root][INFO] - data_check - {"label_num": 97, "data_size": 321}
+[2023-12-01 18:08:44,691][root][INFO] - data_check - {"label_num": 98, "data_size": 300}
+[2023-12-01 18:08:44,691][root][INFO] - data_check - {"label_num": 99, "data_size": 288}
+[2023-12-01 18:08:44,691][__main__][INFO] - data loaded
+[2023-12-01 18:08:44,710][root][INFO] - init model_type: Pytorch
+[2023-12-01 18:08:44,739][uvicorn.error][INFO] - Started server process [4103732]
+[2023-12-01 18:08:44,739][uvicorn.error][INFO] - Waiting for application startup.
+[2023-12-01 18:08:44,739][uvicorn.error][INFO] - Application startup complete.
+[2023-12-01 18:08:44,740][uvicorn.error][INFO] - Uvicorn running on http://0.0.0.0:8003 (Press CTRL+C to quit)
+[2023-12-01 18:10:41,992][root][INFO] - bulid model
+[2023-12-01 18:10:41,992][root][INFO] - FL start
+[2023-12-01 18:10:42,005][fedops.client.client_api][INFO] - FL_server_IP:port - ccl.gachon.ac.kr:40021
+[2023-12-01 18:10:42,007][root][INFO] - FL learning ready
+[2023-12-01 18:10:42,007][root][INFO] - fl_task_id: 64f99bb134a89971e54d09d9
+[2023-12-01 18:10:42,007][root][INFO] - dataset: Cifar100
+[2023-12-01 18:10:42,007][root][INFO] - output_size: 100
+[2023-12-01 18:10:42,007][root][INFO] - validation_split: 0.2
+[2023-12-01 18:10:42,007][root][INFO] - model_type: Pytorch
+[2023-12-01 18:10:42,015][root][INFO] - notify_fail start
+[2023-12-01 18:10:42,042][root][ERROR] - trainFin
+[2023-12-01 18:10:42,043][uvicorn.error][ERROR] - Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 376, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/fastapi/applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/routing.py", line 64, in app
+    await response(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/responses.py", line 142, in __call__
+    await self.background()
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/background.py", line 35, in __call__
+    await task()
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/background.py", line 18, in __call__
+    await self.func(*self.args, **self.kwargs)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/fedops/client/app.py", line 164, in fl_client_start
+    raise e
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/fedops/client/app.py", line 106, in fl_client_start
+    fl_round=1, gl_model=self.status.gl_model, wandb_use=self.wandb_use,wandb_name=self.wandb_name,
+AttributeError: 'FLClientTask' object has no attribute 'wandb_name'
