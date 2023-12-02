@@ -1,6 +1,6 @@
 
 # task_id: "646f419d9412e787a370d614" # Task ID that shows FedOps Website"
-task_id: "64f99bb134a89971e54d09d9" # Input your Task Name that shows FedOps Website"
+task_id: "test" # Input your Task Name that shows FedOps Website"
 num_epochs: 2 # number of local epochs
 batch_size: 128
 num_rounds: 3
