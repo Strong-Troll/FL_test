@@ -4,7 +4,7 @@ task_id: "test" # Input your Task Name that shows FedOps Website"
 num_epochs: 2 # number of local epochs
 batch_size: 128
 num_rounds: 3
-clients_per_round: 1
+clients_per_round: 2
 learning_rate: 0.001
 
 
