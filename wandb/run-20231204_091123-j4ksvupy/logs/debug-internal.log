@@ -1,0 +1,493 @@
+2023-12-04 09:11:23,235 INFO    StreamThr :2107898 [internal.py:wandb_internal():86] W&B internal server running at pid: 2107898, started at: 2023-12-04 09:11:23.234105
+2023-12-04 09:11:23,238 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status
+2023-12-04 09:11:23,242 INFO    WriterThread:2107898 [datastore.py:open_for_write():85] open: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/run-j4ksvupy.wandb
+2023-12-04 09:11:23,243 DEBUG   SenderThread:2107898 [sender.py:send():379] send: header
+2023-12-04 09:11:23,276 DEBUG   SenderThread:2107898 [sender.py:send():379] send: run
+2023-12-04 09:11:23,893 INFO    SenderThread:2107898 [dir_watcher.py:__init__():211] watching files in: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files
+2023-12-04 09:11:23,894 INFO    SenderThread:2107898 [sender.py:_start_run_threads():1121] run started: j4ksvupy with start time 1701648683.233374
+2023-12-04 09:11:23,904 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: check_version
+2023-12-04 09:11:23,905 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: check_version
+2023-12-04 09:11:24,017 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: run_start
+2023-12-04 09:11:24,035 DEBUG   HandlerThread:2107898 [system_info.py:__init__():32] System info init
+2023-12-04 09:11:24,035 DEBUG   HandlerThread:2107898 [system_info.py:__init__():47] System info init done
+2023-12-04 09:11:24,035 INFO    HandlerThread:2107898 [system_monitor.py:start():181] Starting system monitor
+2023-12-04 09:11:24,035 INFO    SystemMonitor:2107898 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-12-04 09:11:24,037 INFO    HandlerThread:2107898 [system_monitor.py:probe():201] Collecting system info
+2023-12-04 09:11:24,037 INFO    SystemMonitor:2107898 [interfaces.py:start():190] Started cpu monitoring
+2023-12-04 09:11:24,039 INFO    SystemMonitor:2107898 [interfaces.py:start():190] Started disk monitoring
+2023-12-04 09:11:24,040 INFO    SystemMonitor:2107898 [interfaces.py:start():190] Started gpu monitoring
+2023-12-04 09:11:24,041 INFO    SystemMonitor:2107898 [interfaces.py:start():190] Started memory monitoring
+2023-12-04 09:11:24,042 INFO    SystemMonitor:2107898 [interfaces.py:start():190] Started network monitoring
+2023-12-04 09:11:24,118 DEBUG   HandlerThread:2107898 [system_info.py:probe():196] Probing system
+2023-12-04 09:11:24,130 DEBUG   HandlerThread:2107898 [system_info.py:_probe_git():181] Probing git
+2023-12-04 09:11:24,153 DEBUG   HandlerThread:2107898 [system_info.py:_probe_git():189] Probing git done
+2023-12-04 09:11:24,153 DEBUG   HandlerThread:2107898 [system_info.py:probe():244] Probing system done
+2023-12-04 09:11:24,153 DEBUG   HandlerThread:2107898 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-48-generic-x86_64-with-glibc2.31', 'python': '3.9.17', 'heartbeatAt': '2023-12-04T00:11:24.118498', 'startedAt': '2023-12-04T00:11:23.226033', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/ccl/Desktop/FedOps_test/client_main.py', 'codePathLocal': 'client_main.py', 'codePath': 'client_main.py', 'git': {'remote': 'https://github.com/Strong-Troll/FL_test.git', 'commit': 'f34c9bc9ac50f8dbf3f94495273465ebc07d5769'}, 'email': 'rirakang@gachon.ac.kr', 'root': '/home/ccl/Desktop/FedOps_test', 'host': 'ccl-e-server', 'username': 'ccl', 'executable': '/home/ccl/anaconda3/envs/FedOps/bin/python', 'cpu_count': 24, 'cpu_count_logical': 48, 'cpu_freq': {'current': 2.3708333333333353, 'min': 1000.0, 'max': 3500.0}, 'cpu_freq_per_core': [{'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 1.351, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}, {'current': 2.4, 'min': 1000.0, 'max': 3500.0}], 'disk': {'/': {'total': 548.9518241882324, 'used': 340.6746253967285}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 62.546993255615234}}
+2023-12-04 09:11:24,153 INFO    HandlerThread:2107898 [system_monitor.py:probe():211] Finished collecting system info
+2023-12-04 09:11:24,153 INFO    HandlerThread:2107898 [system_monitor.py:probe():214] Publishing system info
+2023-12-04 09:11:24,154 DEBUG   HandlerThread:2107898 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-04 09:11:24,154 DEBUG   HandlerThread:2107898 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-04 09:11:24,155 DEBUG   HandlerThread:2107898 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-12-04 09:11:24,898 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/requirements.txt
+2023-12-04 09:11:24,899 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/conda-environment.yaml
+2023-12-04 09:11:29,393 DEBUG   HandlerThread:2107898 [system_info.py:_save_conda():87] Saving conda packages done
+2023-12-04 09:11:29,395 INFO    HandlerThread:2107898 [system_monitor.py:probe():216] Finished publishing system info
+2023-12-04 09:11:29,406 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:11:29,407 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: keepalive
+2023-12-04 09:11:29,408 DEBUG   SenderThread:2107898 [sender.py:send():379] send: files
+2023-12-04 09:11:29,408 INFO    SenderThread:2107898 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2023-12-04 09:11:29,419 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:11:29,420 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:11:29,427 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:11:29,755 DEBUG   SenderThread:2107898 [sender.py:send():379] send: telemetry
+2023-12-04 09:11:29,897 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/conda-environment.yaml
+2023-12-04 09:11:29,898 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/wandb-metadata.json
+2023-12-04 09:11:29,898 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:11:30,197 INFO    wandb-upload_0:2107898 [upload_job.py:push():131] Uploaded file /tmp/tmphi7js0m2wandb/2no3vdsd-wandb-metadata.json
+2023-12-04 09:11:31,898 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:11:34,810 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:11:37,902 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:11:39,961 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:11:43,905 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:11:44,419 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:11:44,420 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:11:44,421 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:11:45,627 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:11:49,908 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:11:51,013 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:11:56,544 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:11:56,912 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/config.yaml
+2023-12-04 09:11:57,913 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:11:59,419 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:11:59,421 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:11:59,421 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:12:02,067 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:12:03,916 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:12:07,068 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:12:09,920 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:12:12,596 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:12:14,420 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:12:14,421 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:12:14,421 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:12:15,923 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:12:18,125 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:12:23,651 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:12:23,928 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:12:24,043 DEBUG   SystemMonitor:2107898 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-12-04 09:12:24,046 DEBUG   SenderThread:2107898 [sender.py:send():379] send: stats
+2023-12-04 09:12:29,177 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:12:29,420 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:12:29,421 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:12:29,421 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:12:29,931 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:12:34,695 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:12:35,935 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:12:39,706 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:12:41,938 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:12:44,420 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:12:44,421 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:12:44,421 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:12:44,727 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:12:49,760 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:12:49,942 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:12:54,048 DEBUG   SenderThread:2107898 [sender.py:send():379] send: stats
+2023-12-04 09:12:55,288 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:12:55,945 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:12:59,420 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:12:59,421 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:12:59,422 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:13:00,696 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:13:01,949 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:05,817 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:13:07,955 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:11,344 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:13:14,420 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:13:14,422 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:13:14,422 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:13:16,727 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:13:16,960 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:20,526 DEBUG   SenderThread:2107898 [sender.py:send():379] send: telemetry
+2023-12-04 09:13:20,843 DEBUG   SenderThread:2107898 [sender.py:send():379] send: config
+2023-12-04 09:13:21,850 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:13:21,963 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:22,964 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:23,964 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:24,051 DEBUG   SenderThread:2107898 [sender.py:send():379] send: stats
+2023-12-04 09:13:25,965 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:26,870 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:13:27,966 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:29,421 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:13:29,422 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:13:29,426 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:13:29,967 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:31,968 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:13:31,979 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:32,979 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/config.yaml
+2023-12-04 09:13:34,980 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:36,981 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:37,316 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:13:38,982 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:40,983 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:42,360 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:13:42,984 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:44,421 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:13:44,422 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:13:44,426 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:13:44,985 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:46,986 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:47,463 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:13:48,987 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:50,109 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:13:50,110 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:13:50,110 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:13:50,111 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:13:50,111 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:13:50,111 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:13:50,112 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:13:50,988 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:52,990 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:53,114 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:13:54,053 DEBUG   SenderThread:2107898 [sender.py:send():379] send: stats
+2023-12-04 09:13:54,991 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:55,473 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:13:55,474 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:13:55,474 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:13:55,697 DEBUG   SenderThread:2107898 [sender.py:send():379] send: config
+2023-12-04 09:13:56,992 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:58,204 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:13:58,993 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:13:59,422 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:13:59,423 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:13:59,429 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:14:00,993 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:02,994 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:03,224 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:14:03,995 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/config.yaml
+2023-12-04 09:14:04,995 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:06,996 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:08,536 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:14:08,997 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:10,998 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:12,999 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:13,632 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:14:14,421 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:14:14,422 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:14:14,428 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:14:15,000 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:17,001 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:18,699 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:14:19,002 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:21,005 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:21,074 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:21,077 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:21,079 DEBUG   SenderThread:2107898 [sender.py:send():379] send: history
+2023-12-04 09:14:21,079 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:21,080 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: summary_record
+2023-12-04 09:14:21,080 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:21,081 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:21,081 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:21,081 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:21,082 INFO    SenderThread:2107898 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-12-04 09:14:22,006 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/wandb-summary.json
+2023-12-04 09:14:23,006 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:24,056 DEBUG   SenderThread:2107898 [sender.py:send():379] send: stats
+2023-12-04 09:14:24,057 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:14:26,319 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:26,319 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:26,320 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:26,525 DEBUG   SenderThread:2107898 [sender.py:send():379] send: config
+2023-12-04 09:14:27,008 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:29,010 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:29,136 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:14:29,422 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:14:29,423 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:14:29,429 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:14:31,011 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:33,012 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:34,221 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:14:35,013 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:35,013 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/config.yaml
+2023-12-04 09:14:37,014 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:39,015 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:39,522 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:14:41,016 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:43,017 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:44,422 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:14:44,423 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:14:44,423 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:14:44,720 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:14:45,018 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:47,019 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:49,020 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:49,739 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:14:51,021 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:52,176 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:52,177 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:52,178 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:52,179 DEBUG   SenderThread:2107898 [sender.py:send():379] send: history
+2023-12-04 09:14:52,179 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:52,180 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: summary_record
+2023-12-04 09:14:52,180 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:52,181 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:52,181 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:52,181 INFO    SenderThread:2107898 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-12-04 09:14:53,023 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:53,023 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/wandb-summary.json
+2023-12-04 09:14:54,058 DEBUG   SenderThread:2107898 [sender.py:send():379] send: stats
+2023-12-04 09:14:55,024 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:55,060 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:14:57,717 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:57,717 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:57,718 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:14:57,997 DEBUG   SenderThread:2107898 [sender.py:send():379] send: config
+2023-12-04 09:14:59,026 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:14:59,422 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:14:59,423 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:14:59,424 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:15:00,071 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:15:01,027 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:03,028 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:05,029 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:05,084 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:15:06,029 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/config.yaml
+2023-12-04 09:15:07,030 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:09,031 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:10,367 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:15:11,032 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:13,033 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:14,422 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:15:14,423 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:15:14,429 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:15:15,034 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:15,418 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:15:17,035 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:19,037 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:20,481 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:15:21,038 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:23,039 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:23,559 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:23,560 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:23,561 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:23,561 DEBUG   SenderThread:2107898 [sender.py:send():379] send: history
+2023-12-04 09:15:23,562 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:23,562 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: summary_record
+2023-12-04 09:15:23,563 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:23,563 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:23,563 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:23,564 INFO    SenderThread:2107898 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-12-04 09:15:24,039 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/wandb-summary.json
+2023-12-04 09:15:24,061 DEBUG   SenderThread:2107898 [sender.py:send():379] send: stats
+2023-12-04 09:15:25,040 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:26,063 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:15:28,685 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:28,686 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:28,686 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:28,979 DEBUG   SenderThread:2107898 [sender.py:send():379] send: config
+2023-12-04 09:15:29,043 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:29,422 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:15:29,423 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:15:29,429 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:15:31,046 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:31,119 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:15:33,047 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:35,048 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:36,157 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:15:37,049 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:37,050 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/config.yaml
+2023-12-04 09:15:39,050 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:41,051 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:41,499 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:15:43,052 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:44,423 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:15:44,424 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:15:44,429 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:15:45,054 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:46,534 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:15:47,055 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:49,056 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:51,057 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:51,567 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:15:53,058 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:54,064 DEBUG   SenderThread:2107898 [sender.py:send():379] send: stats
+2023-12-04 09:15:54,893 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:54,894 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:54,895 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:54,895 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:54,895 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:54,895 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:54,895 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:15:54,896 DEBUG   SenderThread:2107898 [sender.py:send():379] send: history
+2023-12-04 09:15:54,896 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: summary_record
+2023-12-04 09:15:54,897 INFO    SenderThread:2107898 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-12-04 09:15:55,059 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:55,059 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/wandb-summary.json
+2023-12-04 09:15:56,899 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:15:57,060 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:15:59,423 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-04 09:15:59,424 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: stop_status
+2023-12-04 09:15:59,430 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:16:00,137 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:16:00,138 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:16:00,138 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:16:00,173 DEBUG   SenderThread:2107898 [sender.py:send():379] send: config
+2023-12-04 09:16:00,176 DEBUG   SenderThread:2107898 [sender.py:send():379] send: config
+2023-12-04 09:16:00,539 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: log_artifact
+2023-12-04 09:16:00,540 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: log_artifact
+2023-12-04 09:16:00,997 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:16:00,999 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-04 09:16:01,062 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:16:01,063 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/media/table/Data Lable Histogram_table_5_fd3b7810f17ca1b58ba0.table.json
+2023-12-04 09:16:01,064 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/media
+2023-12-04 09:16:01,064 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/media/table
+2023-12-04 09:16:01,624 INFO    wandb-upload_0:2107898 [upload_job.py:push():131] Uploaded file /tmp/tmphi7js0m2wandb/s2iunxnz-media/table/Data Lable Histogram_table_5_fd3b7810f17ca1b58ba0.table.json
+2023-12-04 09:16:02,002 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: poll_exit
+2023-12-04 09:16:02,264 INFO    wandb-upload_1:2107898 [upload_job.py:push():89] Uploaded file /home/ccl/.local/share/wandb/artifacts/staging/tmppcviqb6x
+2023-12-04 09:16:03,064 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:16:03,129 INFO    SenderThread:2107898 [sender.py:send_request_log_artifact():1441] logged artifact run-j4ksvupy-DataLableHistogram_table - {'id': 'QXJ0aWZhY3Q6NjU2NDAyNzMw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyMDU4MDAyMQ==', 'latestArtifact': None}}
+2023-12-04 09:16:03,130 DEBUG   SenderThread:2107898 [sender.py:send():379] send: files
+2023-12-04 09:16:03,130 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:16:03,131 INFO    SenderThread:2107898 [sender.py:_save_file():1375] saving file media/table/Data Lable Histogram_table_5_fd3b7810f17ca1b58ba0.table.json with policy now
+2023-12-04 09:16:03,132 DEBUG   SenderThread:2107898 [sender.py:send():379] send: history
+2023-12-04 09:16:03,133 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: summary_record
+2023-12-04 09:16:03,139 INFO    SenderThread:2107898 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-12-04 09:16:03,139 DEBUG   SenderThread:2107898 [sender.py:send():379] send: telemetry
+2023-12-04 09:16:03,140 DEBUG   SenderThread:2107898 [sender.py:send():379] send: exit
+2023-12-04 09:16:03,140 INFO    SenderThread:2107898 [sender.py:send_exit():584] handling exit code: 0
+2023-12-04 09:16:03,141 INFO    SenderThread:2107898 [sender.py:send_exit():586] handling runtime: 276
+2023-12-04 09:16:03,141 INFO    SenderThread:2107898 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-12-04 09:16:03,142 INFO    SenderThread:2107898 [sender.py:send_exit():592] send defer
+2023-12-04 09:16:03,147 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: poll_exit
+2023-12-04 09:16:03,148 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: defer
+2023-12-04 09:16:03,150 INFO    HandlerThread:2107898 [handler.py:handle_request_defer():170] handle defer: 0
+2023-12-04 09:16:03,151 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: defer
+2023-12-04 09:16:03,151 INFO    SenderThread:2107898 [sender.py:send_request_defer():608] handle sender defer: 0
+2023-12-04 09:16:03,151 INFO    SenderThread:2107898 [sender.py:transition_state():612] send defer: 1
+2023-12-04 09:16:03,151 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: defer
+2023-12-04 09:16:03,152 INFO    HandlerThread:2107898 [handler.py:handle_request_defer():170] handle defer: 1
+2023-12-04 09:16:03,152 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: defer
+2023-12-04 09:16:03,152 INFO    SenderThread:2107898 [sender.py:send_request_defer():608] handle sender defer: 1
+2023-12-04 09:16:03,152 INFO    SenderThread:2107898 [sender.py:transition_state():612] send defer: 2
+2023-12-04 09:16:03,152 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: defer
+2023-12-04 09:16:03,152 INFO    HandlerThread:2107898 [handler.py:handle_request_defer():170] handle defer: 2
+2023-12-04 09:16:03,153 INFO    HandlerThread:2107898 [system_monitor.py:finish():190] Stopping system monitor
+2023-12-04 09:16:03,153 INFO    HandlerThread:2107898 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-04 09:16:03,154 DEBUG   SystemMonitor:2107898 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-12-04 09:16:03,154 INFO    HandlerThread:2107898 [interfaces.py:finish():202] Joined disk monitor
+2023-12-04 09:16:03,155 DEBUG   SystemMonitor:2107898 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-12-04 09:16:03,251 INFO    HandlerThread:2107898 [interfaces.py:finish():202] Joined gpu monitor
+2023-12-04 09:16:03,252 INFO    HandlerThread:2107898 [interfaces.py:finish():202] Joined memory monitor
+2023-12-04 09:16:03,252 INFO    HandlerThread:2107898 [interfaces.py:finish():202] Joined network monitor
+2023-12-04 09:16:03,253 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: defer
+2023-12-04 09:16:03,253 INFO    SenderThread:2107898 [sender.py:send_request_defer():608] handle sender defer: 2
+2023-12-04 09:16:03,253 INFO    SenderThread:2107898 [sender.py:transition_state():612] send defer: 3
+2023-12-04 09:16:03,253 DEBUG   SenderThread:2107898 [sender.py:send():379] send: stats
+2023-12-04 09:16:03,253 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: defer
+2023-12-04 09:16:03,255 INFO    HandlerThread:2107898 [handler.py:handle_request_defer():170] handle defer: 3
+2023-12-04 09:16:03,255 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: defer
+2023-12-04 09:16:03,255 INFO    SenderThread:2107898 [sender.py:send_request_defer():608] handle sender defer: 3
+2023-12-04 09:16:03,255 INFO    SenderThread:2107898 [sender.py:transition_state():612] send defer: 4
+2023-12-04 09:16:03,256 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: defer
+2023-12-04 09:16:03,256 INFO    HandlerThread:2107898 [handler.py:handle_request_defer():170] handle defer: 4
+2023-12-04 09:16:03,256 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: defer
+2023-12-04 09:16:03,256 INFO    SenderThread:2107898 [sender.py:send_request_defer():608] handle sender defer: 4
+2023-12-04 09:16:03,256 INFO    SenderThread:2107898 [sender.py:transition_state():612] send defer: 5
+2023-12-04 09:16:03,256 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: defer
+2023-12-04 09:16:03,257 INFO    HandlerThread:2107898 [handler.py:handle_request_defer():170] handle defer: 5
+2023-12-04 09:16:03,257 DEBUG   SenderThread:2107898 [sender.py:send():379] send: summary
+2023-12-04 09:16:03,258 INFO    SenderThread:2107898 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-12-04 09:16:03,258 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: defer
+2023-12-04 09:16:03,259 INFO    SenderThread:2107898 [sender.py:send_request_defer():608] handle sender defer: 5
+2023-12-04 09:16:03,259 INFO    SenderThread:2107898 [sender.py:transition_state():612] send defer: 6
+2023-12-04 09:16:03,259 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: defer
+2023-12-04 09:16:03,259 INFO    HandlerThread:2107898 [handler.py:handle_request_defer():170] handle defer: 6
+2023-12-04 09:16:03,260 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: defer
+2023-12-04 09:16:03,260 INFO    SenderThread:2107898 [sender.py:send_request_defer():608] handle sender defer: 6
+2023-12-04 09:16:03,265 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:16:03,513 INFO    SenderThread:2107898 [sender.py:transition_state():612] send defer: 7
+2023-12-04 09:16:03,514 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: defer
+2023-12-04 09:16:03,514 INFO    HandlerThread:2107898 [handler.py:handle_request_defer():170] handle defer: 7
+2023-12-04 09:16:03,515 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: defer
+2023-12-04 09:16:03,515 INFO    SenderThread:2107898 [sender.py:send_request_defer():608] handle sender defer: 7
+2023-12-04 09:16:03,680 INFO    wandb-upload_0:2107898 [upload_job.py:push():131] Uploaded file /tmp/tmphi7js0m2wandb/19b5z8u8-media/table/Data Lable Histogram_table_5_fd3b7810f17ca1b58ba0.table.json
+2023-12-04 09:16:04,065 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/config.yaml
+2023-12-04 09:16:04,065 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/wandb-summary.json
+2023-12-04 09:16:04,332 INFO    SenderThread:2107898 [sender.py:transition_state():612] send defer: 8
+2023-12-04 09:16:04,332 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: defer
+2023-12-04 09:16:04,333 INFO    HandlerThread:2107898 [handler.py:handle_request_defer():170] handle defer: 8
+2023-12-04 09:16:04,333 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: defer
+2023-12-04 09:16:04,334 INFO    SenderThread:2107898 [sender.py:send_request_defer():608] handle sender defer: 8
+2023-12-04 09:16:04,334 INFO    SenderThread:2107898 [job_builder.py:build():281] Attempting to build job artifact
+2023-12-04 09:16:04,335 INFO    SenderThread:2107898 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-12-04 09:16:04,339 INFO    SenderThread:2107898 [job_builder.py:build():369] adding wandb-job metadata file
+2023-12-04 09:16:04,345 INFO    SenderThread:2107898 [sender.py:transition_state():612] send defer: 9
+2023-12-04 09:16:04,345 DEBUG   SenderThread:2107898 [sender.py:send():379] send: artifact
+2023-12-04 09:16:04,351 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: defer
+2023-12-04 09:16:04,354 INFO    HandlerThread:2107898 [handler.py:handle_request_defer():170] handle defer: 9
+2023-12-04 09:16:05,065 INFO    Thread-12 :2107898 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:16:05,716 INFO    wandb-upload_0:2107898 [upload_job.py:push():89] Uploaded file /home/ccl/.local/share/wandb/artifacts/staging/tmpv7eeknmh
+2023-12-04 09:16:05,724 INFO    wandb-upload_1:2107898 [upload_job.py:push():89] Uploaded file /home/ccl/.local/share/wandb/artifacts/staging/tmpd4jm7zhd
+2023-12-04 09:16:07,004 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: keepalive
+2023-12-04 09:16:07,098 INFO    SenderThread:2107898 [sender.py:send_artifact():1453] sent artifact job-https___github.com_Strong-Troll_FL_test.git_client_main.py - {'id': 'QXJ0aWZhY3Q6NjU2NDAyNzU4', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyMDU4MDAyOA==', 'latestArtifact': None}}
+2023-12-04 09:16:07,099 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: defer
+2023-12-04 09:16:07,099 INFO    SenderThread:2107898 [sender.py:send_request_defer():608] handle sender defer: 9
+2023-12-04 09:16:07,099 INFO    SenderThread:2107898 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-04 09:16:08,067 INFO    SenderThread:2107898 [dir_watcher.py:finish():388] scan: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files
+2023-12-04 09:16:08,068 INFO    SenderThread:2107898 [dir_watcher.py:finish():402] scan save: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/requirements.txt requirements.txt
+2023-12-04 09:16:08,068 INFO    SenderThread:2107898 [dir_watcher.py:finish():402] scan save: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/conda-environment.yaml conda-environment.yaml
+2023-12-04 09:16:08,069 INFO    SenderThread:2107898 [dir_watcher.py:finish():402] scan save: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/wandb-summary.json wandb-summary.json
+2023-12-04 09:16:08,069 INFO    SenderThread:2107898 [dir_watcher.py:finish():402] scan save: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log output.log
+2023-12-04 09:16:08,070 INFO    SenderThread:2107898 [dir_watcher.py:finish():402] scan save: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/wandb-metadata.json wandb-metadata.json
+2023-12-04 09:16:08,075 INFO    SenderThread:2107898 [dir_watcher.py:finish():402] scan save: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/config.yaml config.yaml
+2023-12-04 09:16:08,104 INFO    SenderThread:2107898 [dir_watcher.py:finish():402] scan save: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/media/table/Data Lable Histogram_table_5_fd3b7810f17ca1b58ba0.table.json media/table/Data Lable Histogram_table_5_fd3b7810f17ca1b58ba0.table.json
+2023-12-04 09:16:08,104 INFO    SenderThread:2107898 [sender.py:transition_state():612] send defer: 10
+2023-12-04 09:16:08,105 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: defer
+2023-12-04 09:16:08,105 INFO    HandlerThread:2107898 [handler.py:handle_request_defer():170] handle defer: 10
+2023-12-04 09:16:08,106 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: defer
+2023-12-04 09:16:08,106 INFO    SenderThread:2107898 [sender.py:send_request_defer():608] handle sender defer: 10
+2023-12-04 09:16:08,106 INFO    SenderThread:2107898 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-04 09:16:08,527 INFO    wandb-upload_0:2107898 [upload_job.py:push():131] Uploaded file /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/requirements.txt
+2023-12-04 09:16:08,623 INFO    wandb-upload_2:2107898 [upload_job.py:push():131] Uploaded file /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/conda-environment.yaml
+2023-12-04 09:16:08,894 INFO    wandb-upload_4:2107898 [upload_job.py:push():131] Uploaded file /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/config.yaml
+2023-12-04 09:16:08,900 INFO    wandb-upload_3:2107898 [upload_job.py:push():131] Uploaded file /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/wandb-summary.json
+2023-12-04 09:16:08,901 INFO    wandb-upload_1:2107898 [upload_job.py:push():131] Uploaded file /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/files/output.log
+2023-12-04 09:16:09,102 INFO    Thread-11 :2107898 [sender.py:transition_state():612] send defer: 11
+2023-12-04 09:16:09,103 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: defer
+2023-12-04 09:16:09,103 INFO    HandlerThread:2107898 [handler.py:handle_request_defer():170] handle defer: 11
+2023-12-04 09:16:09,104 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: defer
+2023-12-04 09:16:09,104 INFO    SenderThread:2107898 [sender.py:send_request_defer():608] handle sender defer: 11
+2023-12-04 09:16:09,104 INFO    SenderThread:2107898 [file_pusher.py:join():181] waiting for file pusher
+2023-12-04 09:16:09,104 INFO    SenderThread:2107898 [sender.py:transition_state():612] send defer: 12
+2023-12-04 09:16:09,105 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: defer
+2023-12-04 09:16:09,105 INFO    HandlerThread:2107898 [handler.py:handle_request_defer():170] handle defer: 12
+2023-12-04 09:16:09,105 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: status_report
+2023-12-04 09:16:09,106 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: defer
+2023-12-04 09:16:09,106 INFO    SenderThread:2107898 [sender.py:send_request_defer():608] handle sender defer: 12
+2023-12-04 09:16:09,106 INFO    SenderThread:2107898 [file_stream.py:finish():594] file stream finish called
+2023-12-04 09:16:09,826 INFO    SenderThread:2107898 [file_stream.py:finish():598] file stream finish is done
+2023-12-04 09:16:09,827 INFO    SenderThread:2107898 [sender.py:transition_state():612] send defer: 13
+2023-12-04 09:16:09,827 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: defer
+2023-12-04 09:16:09,827 INFO    HandlerThread:2107898 [handler.py:handle_request_defer():170] handle defer: 13
+2023-12-04 09:16:09,828 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: defer
+2023-12-04 09:16:09,828 INFO    SenderThread:2107898 [sender.py:send_request_defer():608] handle sender defer: 13
+2023-12-04 09:16:09,828 INFO    SenderThread:2107898 [sender.py:transition_state():612] send defer: 14
+2023-12-04 09:16:09,829 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: defer
+2023-12-04 09:16:09,830 INFO    HandlerThread:2107898 [handler.py:handle_request_defer():170] handle defer: 14
+2023-12-04 09:16:09,830 DEBUG   SenderThread:2107898 [sender.py:send():379] send: final
+2023-12-04 09:16:09,830 DEBUG   SenderThread:2107898 [sender.py:send():379] send: footer
+2023-12-04 09:16:09,831 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: defer
+2023-12-04 09:16:09,831 INFO    SenderThread:2107898 [sender.py:send_request_defer():608] handle sender defer: 14
+2023-12-04 09:16:09,833 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-04 09:16:09,835 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: poll_exit
+2023-12-04 09:16:09,835 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: server_info
+2023-12-04 09:16:09,835 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: get_summary
+2023-12-04 09:16:09,836 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: poll_exit
+2023-12-04 09:16:09,837 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: sampled_history
+2023-12-04 09:16:09,838 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: server_info
+2023-12-04 09:16:09,839 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: job_info
+2023-12-04 09:16:10,036 DEBUG   SenderThread:2107898 [sender.py:send_request():406] send_request: job_info
+2023-12-04 09:16:10,038 DEBUG   HandlerThread:2107898 [handler.py:handle_request():144] handle_request: shutdown
+2023-12-04 09:16:10,038 INFO    HandlerThread:2107898 [handler.py:finish():840] shutting down handler
+2023-12-04 09:16:10,847 INFO    WriterThread:2107898 [datastore.py:close():294] close: /home/ccl/Desktop/FedOps_test/wandb/run-20231204_091123-j4ksvupy/run-j4ksvupy.wandb
+2023-12-04 09:16:11,036 INFO    SenderThread:2107898 [sender.py:finish():1531] shutting down sender
+2023-12-04 09:16:11,037 INFO    SenderThread:2107898 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-04 09:16:11,037 INFO    SenderThread:2107898 [file_pusher.py:join():181] waiting for file pusher

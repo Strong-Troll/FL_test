@@ -1,0 +1,356 @@
+[2023-12-04 09:11:29,423][root][INFO] - label_values: [[0, 3576], [1, 4025], [2, 3556], [3, 3637], [4, 3570], [5, 3302], [6, 3586], [7, 3699], [8, 3474], [9, 3575]]
+[32mINFO[39m:     127.0.0.1:41136 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[2023-12-04 09:11:29,464][flwr][INFO] - Opened insecure gRPC connection (no certificates were passed)
+[2023-12-04 09:11:29,467][flwr][DEBUG] - ChannelConnectivity.IDLE
+[2023-12-04 09:11:29,469][flwr][DEBUG] - ChannelConnectivity.CONNECTING
+[2023-12-04 09:11:29,473][flwr][DEBUG] - ChannelConnectivity.TRANSIENT_FAILURE
+[2023-12-04 09:11:29,676][flwr][DEBUG] - gRPC channel closed
+[2023-12-04 09:11:29,691][root][INFO] - notify_fail start
+[2023-12-04 09:11:29,718][root][ERROR] - trainFin
+[2023-12-04 09:11:29,719][uvicorn.error][ERROR] - Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 376, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/fastapi/applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/routing.py", line 64, in app
+    await response(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/responses.py", line 142, in __call__
+    await self.background()
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/background.py", line 35, in __call__
+    await task()
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/background.py", line 18, in __call__
+    await self.func(*self.args, **self.kwargs)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/fedops/client/app.py", line 165, in fl_client_start
+    raise e
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/fedops/client/app.py", line 126, in fl_client_start
+    await loop.run_in_executor(None, client_start)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/flwr/client/app.py", line 288, in start_numpy_client
+    start_client(
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/flwr/client/app.py", line 201, in start_client
+    task_ins = receive()
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/flwr/client/grpc_client/connection.py", line 116, in receive
+    server_message = next(server_message_iterator)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/grpc/_channel.py", line 541, in __next__
+    return self._next()
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/grpc/_channel.py", line 967, in _next
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNAVAILABLE: ipv4:192.9.201.228:40023: Socket closed"
+	debug_error_string = "UNKNOWN:failed to connect to all addresses; last error: UNAVAILABLE: ipv4:192.9.201.228:40023: Socket closed {created_time:"2023-12-04T09:11:29.472675808+09:00", grpc_status:14}"
+>
+INFO flwr 2023-12-04 09:11:29,464 | grpc.py:49 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-04 09:11:29,467 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-04 09:11:29,469 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-04 09:11:29,473 | connection.py:42 | ChannelConnectivity.TRANSIENT_FAILURE
+DEBUG flwr 2023-12-04 09:11:29,676 | connection.py:139 | gRPC channel closed
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/fedops/client/app.py", line 126, in fl_client_start
+    await loop.run_in_executor(None, client_start)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/flwr/client/app.py", line 288, in start_numpy_client
+    start_client(
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/flwr/client/app.py", line 201, in start_client
+    task_ins = receive()
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/flwr/client/grpc_client/connection.py", line 116, in receive
+    server_message = next(server_message_iterator)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/grpc/_channel.py", line 541, in __next__
+    return self._next()
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/grpc/_channel.py", line 967, in _next
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNAVAILABLE: ipv4:192.9.201.228:40023: Socket closed"
+	debug_error_string = "UNKNOWN:failed to connect to all addresses; last error: UNAVAILABLE: ipv4:192.9.201.228:40023: Socket closed {created_time:"2023-12-04T09:11:29.472675808+09:00", grpc_status:14}"
+>
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/logging/__init__.py", line 1083, in emit
+    msg = self.format(record)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/logging/__init__.py", line 927, in format
+    return fmt.format(record)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/logging/__init__.py", line 663, in format
+    record.message = record.getMessage()
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/logging/__init__.py", line 367, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/background.py", line 18, in __call__
+    await self.func(*self.args, **self.kwargs)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/fedops/client/app.py", line 162, in fl_client_start
+    logging.info('[E][PC0002] learning', e)
+Message: '[E][PC0002] learning'
+Arguments: (<_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNAVAILABLE: ipv4:192.9.201.228:40023: Socket closed"
+	debug_error_string = "UNKNOWN:failed to connect to all addresses; last error: UNAVAILABLE: ipv4:192.9.201.228:40023: Socket closed {created_time:"2023-12-04T09:11:29.472675808+09:00", grpc_status:14}"
+>,)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/fedops/client/app.py", line 126, in fl_client_start
+    await loop.run_in_executor(None, client_start)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/flwr/client/app.py", line 288, in start_numpy_client
+    start_client(
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/flwr/client/app.py", line 201, in start_client
+    task_ins = receive()
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/flwr/client/grpc_client/connection.py", line 116, in receive
+    server_message = next(server_message_iterator)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/grpc/_channel.py", line 541, in __next__
+    return self._next()
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/grpc/_channel.py", line 967, in _next
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNAVAILABLE: ipv4:192.9.201.228:40023: Socket closed"
+	debug_error_string = "UNKNOWN:failed to connect to all addresses; last error: UNAVAILABLE: ipv4:192.9.201.228:40023: Socket closed {created_time:"2023-12-04T09:11:29.472675808+09:00", grpc_status:14}"
+>
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/logging/__init__.py", line 1083, in emit
+    msg = self.format(record)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/logging/__init__.py", line 927, in format
+    return fmt.format(record)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/logging/__init__.py", line 663, in format
+    record.message = record.getMessage()
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/logging/__init__.py", line 367, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/background.py", line 18, in __call__
+    await self.func(*self.args, **self.kwargs)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/fedops/client/app.py", line 162, in fl_client_start
+    logging.info('[E][PC0002] learning', e)
+Message: '[E][PC0002] learning'
+Arguments: (<_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNAVAILABLE: ipv4:192.9.201.228:40023: Socket closed"
+	debug_error_string = "UNKNOWN:failed to connect to all addresses; last error: UNAVAILABLE: ipv4:192.9.201.228:40023: Socket closed {created_time:"2023-12-04T09:11:29.472675808+09:00", grpc_status:14}"
+>,)
+[31mERROR[39m:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 376, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/fastapi/applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/routing.py", line 64, in app
+    await response(scope, receive, send)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/responses.py", line 142, in __call__
+    await self.background()
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/background.py", line 35, in __call__
+    await task()
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/starlette/background.py", line 18, in __call__
+    await self.func(*self.args, **self.kwargs)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/fedops/client/app.py", line 165, in fl_client_start
+    raise e
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/fedops/client/app.py", line 126, in fl_client_start
+    await loop.run_in_executor(None, client_start)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/flwr/client/app.py", line 288, in start_numpy_client
+    start_client(
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/flwr/client/app.py", line 201, in start_client
+    task_ins = receive()
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/flwr/client/grpc_client/connection.py", line 116, in receive
+    server_message = next(server_message_iterator)
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/grpc/_channel.py", line 541, in __next__
+    return self._next()
+  File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/grpc/_channel.py", line 967, in _next
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNAVAILABLE: ipv4:192.9.201.228:40023: Socket closed"
+	debug_error_string = "UNKNOWN:failed to connect to all addresses; last error: UNAVAILABLE: ipv4:192.9.201.228:40023: Socket closed {created_time:"2023-12-04T09:11:29.472675808+09:00", grpc_status:14}"
+>
+[32mINFO[39m:     127.0.0.1:59226 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[32mINFO[39m:     127.0.0.1:59236 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[32mINFO[39m:     127.0.0.1:59362 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[32mINFO[39m:     127.0.0.1:40834 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[32mINFO[39m:     127.0.0.1:40836 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[32mINFO[39m:     127.0.0.1:37642 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[32mINFO[39m:     127.0.0.1:37654 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[32mINFO[39m:     127.0.0.1:59614 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[32mINFO[39m:     127.0.0.1:57362 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[32mINFO[39m:     127.0.0.1:57376 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[32mINFO[39m:     127.0.0.1:41128 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[32mINFO[39m:     127.0.0.1:37094 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[32mINFO[39m:     127.0.0.1:37106 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[32mINFO[39m:     127.0.0.1:44846 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[32mINFO[39m:     127.0.0.1:38160 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[32mINFO[39m:     127.0.0.1:38176 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+INFO flwr 2023-12-04 09:13:20,528 | grpc.py:49 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-04 09:13:20,553 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-04 09:13:20,559 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-04 09:13:20,561 | connection.py:42 | ChannelConnectivity.READY
+[32mINFO[39m:     127.0.0.1:42478 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[2023-12-04 09:13:20,493][root][INFO] - bulid model
+[2023-12-04 09:13:20,494][root][INFO] - FL start
+[2023-12-04 09:13:20,506][fedops.client.client_api][INFO] - FL_server_IP:port - ccl.gachon.ac.kr:40023
+[32mINFO[39m:     127.0.0.1:42480 - "[1mPOST /start HTTP/1.1[22m" [32m200 OK
+[2023-12-04 09:13:20,508][root][INFO] - FL learning ready
+[2023-12-04 09:13:20,508][root][INFO] - fl_task_id: test
+[2023-12-04 09:13:20,509][root][INFO] - dataset: MNIST
+[2023-12-04 09:13:20,509][root][INFO] - output_size: 10
+[2023-12-04 09:13:20,509][root][INFO] - validation_split: 0.2
+[2023-12-04 09:13:20,510][root][INFO] - model_type: Pytorch
+[2023-12-04 09:13:20,510][root][INFO] - wandb_key: eb56a89a7457704c55789c584a3546c707d737f8
+[2023-12-04 09:13:20,510][root][INFO] - wandb_account: yangsemo
+[2023-12-04 09:13:20,525][root][INFO] - label_values: [[0, 3576], [1, 4025], [2, 3556], [3, 3637], [4, 3570], [5, 3302], [6, 3586], [7, 3699], [8, 3474], [9, 3575]]
+[2023-12-04 09:13:20,528][flwr][INFO] - Opened insecure gRPC connection (no certificates were passed)
+[2023-12-04 09:13:20,553][flwr][DEBUG] - ChannelConnectivity.IDLE
+[2023-12-04 09:13:20,559][flwr][DEBUG] - ChannelConnectivity.CONNECTING
+[2023-12-04 09:13:20,561][flwr][DEBUG] - ChannelConnectivity.READY
+config: {'num_rounds': 5, 'local_epochs': 3, 'batch_size': 128}
+Starting training...
+
+
+
+Epoch 1/3: 100%|██████████████████████████████████████████████████| 282/282 [00:07<00:00, 36.96batch/s]
+
+
+Epoch 2/3: 100%|██████████████████████████████████████████████████| 282/282 [00:06<00:00, 46.52batch/s]
+
+
+Epoch 3/3: 100%|██████████████████████████████████████████████████| 282/282 [00:05<00:00, 48.67batch/s]
+Testing:  20%|██████████▌                                          | 56/282 [00:01<00:04, 50.43batch/s]
+
+
+Testing:  92%|███████████████████████████████████████████████▉    | 260/282 [00:05<00:00, 50.28batch/s]
+Testing: 100%|████████████████████████████████████████████████████| 282/282 [00:05<00:00, 50.19batch/s]
+Testing:  79%|██████████████████████████████████████████▌           | 74/94 [00:01<00:00, 49.72batch/s]
+
+Testing: 100%|██████████████████████████████████████████████████████| 94/94 [00:01<00:00, 49.60batch/s]
+Testing:   5%|██▉                                                    | 5/94 [00:00<00:01, 47.72batch/s]
+Starting evalutation...
+Testing: 100%|██████████████████████████████████████████████████████| 94/94 [00:01<00:00, 50.23batch/s]
+Epoch 1/3:   0%|                                                            | 0/282 [00:00<?, ?batch/s]
+config: {'batch_size': 128, 'local_epochs': 3, 'num_rounds': 5}
+
+
+Epoch 1/3: 100%|██████████████████████████████████████████████████| 282/282 [00:05<00:00, 47.41batch/s]
+
+
+Epoch 2/3: 100%|██████████████████████████████████████████████████| 282/282 [00:05<00:00, 48.65batch/s]
+
+
+Epoch 3/3:  73%|████████████████████████████████████▎             | 205/282 [00:04<00:01, 45.27batch/s]
+Epoch 3/3: 100%|██████████████████████████████████████████████████| 282/282 [00:06<00:00, 46.55batch/s]
+
+
+Testing:  77%|████████████████████████████████████████▏           | 218/282 [00:04<00:01, 50.41batch/s]
+Testing: 100%|████████████████████████████████████████████████████| 282/282 [00:05<00:00, 50.33batch/s]
+Testing:  38%|████████████████████▋                                 | 36/94 [00:00<00:01, 50.39batch/s]
+
+Testing: 100%|██████████████████████████████████████████████████████| 94/94 [00:01<00:00, 50.64batch/s]
+Starting evalutation...
+Testing:  82%|████████████████████████████████████████████▏         | 77/94 [00:01<00:00, 50.75batch/s]
+[2023-12-04 09:14:26,319][fedops.client.client_fl][INFO] - test - {"fl_task_id": "test", "client_mac": "19:e7:c0:91:ab:e3", "client_name": "ccl-e-server", "round": 2, "test_loss": 0.04059210376680254, "test_accuracy": 0.9886666666666667, "gl_model_v": 1, "wandb_name": "client-v0(2023-12-04 09:11:10.278021)"}
+config: {'local_epochs': 3, 'batch_size': 128, 'num_rounds': 5}
+Testing: 100%|██████████████████████████████████████████████████████| 94/94 [00:01<00:00, 50.20batch/s]
+
+
+Epoch 1/3: 100%|██████████████████████████████████████████████████| 282/282 [00:05<00:00, 47.22batch/s]
+
+
+Epoch 2/3: 100%|██████████████████████████████████████████████████| 282/282 [00:06<00:00, 46.34batch/s]
+
+
+Epoch 3/3:  85%|██████████████████████████████████████████▌       | 240/282 [00:05<00:00, 47.85batch/s]
+Epoch 3/3: 100%|██████████████████████████████████████████████████| 282/282 [00:05<00:00, 47.89batch/s]
+
+
+Testing:  91%|███████████████████████████████████████████████▌    | 258/282 [00:05<00:00, 49.37batch/s]
+Testing: 100%|████████████████████████████████████████████████████| 282/282 [00:05<00:00, 49.39batch/s]
+Testing:  80%|███████████████████████████████████████████           | 75/94 [00:01<00:00, 49.31batch/s]
+
+Testing: 100%|██████████████████████████████████████████████████████| 94/94 [00:01<00:00, 49.95batch/s]
+Starting evalutation...
+Testing: 100%|██████████████████████████████████████████████████████| 94/94 [00:01<00:00, 49.91batch/s]
+[2023-12-04 09:14:57,716][fedops.client.client_fl][INFO] - test - {"fl_task_id": "test", "client_mac": "19:e7:c0:91:ab:e3", "client_name": "ccl-e-server", "round": 3, "test_loss": 0.04247136758095486, "test_accuracy": 0.98775, "gl_model_v": 1, "wandb_name": "client-v0(2023-12-04 09:11:10.278021)"}
+config: {'local_epochs': 3, 'batch_size': 128, 'num_rounds': 5}
+Starting training...
+
+
+Epoch 1/3: 100%|██████████████████████████████████████████████████| 282/282 [00:06<00:00, 46.24batch/s]
+
+
+Epoch 2/3: 100%|██████████████████████████████████████████████████| 282/282 [00:06<00:00, 46.72batch/s]
+
+
+Epoch 3/3: 100%|██████████████████████████████████████████████████| 282/282 [00:05<00:00, 48.41batch/s]
+Starting evalutation...
+
+Testing:  70%|████████████████████████████████████▏               | 196/282 [00:03<00:01, 50.03batch/s]
+Testing: 100%|████████████████████████████████████████████████████| 282/282 [00:05<00:00, 50.28batch/s]
+Testing:  19%|██████████▎                                           | 18/94 [00:00<00:01, 50.84batch/s]
+
+Testing: 100%|██████████████████████████████████████████████████████| 94/94 [00:01<00:00, 50.04batch/s]
+Starting evalutation...
+Testing:  61%|████████████████████████████████▋                     | 57/94 [00:01<00:00, 50.11batch/s]
+[2023-12-04 09:15:28,685][fedops.client.client_fl][INFO] - test - {"fl_task_id": "test", "client_mac": "19:e7:c0:91:ab:e3", "client_name": "ccl-e-server", "round": 4, "test_loss": 0.04252860328338005, "test_accuracy": 0.9903333333333333, "gl_model_v": 1, "wandb_name": "client-v0(2023-12-04 09:11:10.278021)"}
+config: {'local_epochs': 3, 'batch_size': 128, 'num_rounds': 5}
+Testing: 100%|██████████████████████████████████████████████████████| 94/94 [00:01<00:00, 49.64batch/s]
+
+
+Epoch 1/3: 100%|██████████████████████████████████████████████████| 282/282 [00:06<00:00, 46.37batch/s]
+
+
+Epoch 2/3: 100%|██████████████████████████████████████████████████| 282/282 [00:06<00:00, 46.23batch/s]
+
+
+Epoch 3/3:  80%|███████████████████████████████████████▉          | 225/282 [00:04<00:01, 45.28batch/s]
+Epoch 3/3: 100%|██████████████████████████████████████████████████| 282/282 [00:06<00:00, 45.88batch/s]
+
+
+Testing:  85%|████████████████████████████████████████████▍       | 241/282 [00:04<00:00, 49.97batch/s]
+Testing: 100%|████████████████████████████████████████████████████| 282/282 [00:05<00:00, 50.28batch/s]
+Testing:  66%|███████████████████████████████████▌                  | 62/94 [00:01<00:00, 50.71batch/s]
+
+Testing: 100%|██████████████████████████████████████████████████████| 94/94 [00:01<00:00, 50.44batch/s]
+Starting evalutation...
+Testing: 100%|██████████████████████████████████████████████████████| 94/94 [00:01<00:00, 50.76batch/s]
+DEBUG flwr 2023-12-04 09:16:00,166 | connection.py:139 | gRPC channel closed
+INFO flwr 2023-12-04 09:16:00,167 | app.py:215 | Disconnect and shut down
+[2023-12-04 09:16:00,137][fedops.client.client_fl][INFO] - test - {"fl_task_id": "test", "client_mac": "19:e7:c0:91:ab:e3", "client_name": "ccl-e-server", "round": 5, "test_loss": 0.04994608236700786, "test_accuracy": 0.9910833333333333, "gl_model_v": 1, "wandb_name": "client-v0(2023-12-04 09:11:10.278021)"}
+[2023-12-04 09:16:00,166][flwr][DEBUG] - gRPC channel closed
+[2023-12-04 09:16:00,167][flwr][INFO] - Disconnect and shut down
+[2023-12-04 09:16:00,168][root][INFO] - fl learning finished

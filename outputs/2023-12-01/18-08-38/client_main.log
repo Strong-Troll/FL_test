@@ -151,3 +151,8 @@ Traceback (most recent call last):
   File "/home/ccl/anaconda3/envs/FedOps/lib/python3.9/site-packages/fedops/client/app.py", line 106, in fl_client_start
     fl_round=1, gl_model=self.status.gl_model, wandb_use=self.wandb_use,wandb_name=self.wandb_name,
 AttributeError: 'FLClientTask' object has no attribute 'wandb_name'
+[2023-12-01 19:20:06,672][uvicorn.error][INFO] - Shutting down
+[2023-12-01 19:20:06,773][uvicorn.error][INFO] - Waiting for application shutdown.
+[2023-12-01 19:20:06,774][uvicorn.error][INFO] - Application shutdown complete.
+[2023-12-01 19:20:06,774][uvicorn.error][INFO] - Finished server process [4103732]
+[2023-12-01 19:20:06,797][root][INFO] - ccl-e-server;19:e7:c0:91:ab:e3-client close

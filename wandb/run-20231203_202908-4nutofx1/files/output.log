@@ -1,0 +1,45 @@
+INFO flwr 2023-12-03 20:29:14,273 | grpc.py:49 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-03 20:29:14,337 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-03 20:29:14,340 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-03 20:29:14,345 | connection.py:42 | ChannelConnectivity.READY
+[2023-12-03 20:29:14,269][root][INFO] - label_values: [[0, 294], [1, 298], [2, 289], [3, 312], [4, 302], [5, 300], [6, 284], [7, 316], [8, 313], [9, 303], [10, 285], [11, 306], [12, 284], [13, 293], [14, 297], [15, 307], [16, 291], [17, 312], [18, 320], [19, 301], [20, 306], [21, 300], [22, 287], [23, 289], [24, 288], [25, 303], [26, 293], [27, 314], [28, 311], [29, 300], [30, 309], [31, 299], [32, 298], [33, 295], [34, 304], [35, 307], [36, 305], [37, 311], [38, 302], [39, 285], [40, 291], [41, 301], [42, 312], [43, 302], [44, 300], [45, 304], [46, 304], [47, 291], [48, 310], [49, 304], [50, 298], [51, 302], [52, 323], [53, 292], [54, 295], [55, 303], [56, 275], [57, 270], [58, 302], [59, 315], [60, 307], [61, 286], [62, 310], [63, 304], [64, 302], [65, 293], [66, 294], [67, 300], [68, 299], [69, 290], [70, 288], [71, 291], [72, 321], [73, 300], [74, 298], [75, 298], [76, 291], [77, 305], [78, 298], [79, 310], [80, 283], [81, 311], [82, 306], [83, 296], [84, 309], [85, 302], [86, 302], [87, 306], [88, 314], [89, 311], [90, 310], [91, 305], [92, 278], [93, 289], [94, 297], [95, 297], [96, 283], [97, 321], [98, 300], [99, 288]]
+[2023-12-03 20:29:14,273][flwr][INFO] - Opened insecure gRPC connection (no certificates were passed)
+[32mINFO[39m:     127.0.0.1:45508 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[2023-12-03 20:29:14,337][flwr][DEBUG] - ChannelConnectivity.IDLE
+[2023-12-03 20:29:14,340][flwr][DEBUG] - ChannelConnectivity.CONNECTING
+[2023-12-03 20:29:14,345][flwr][DEBUG] - ChannelConnectivity.READY
+config: {'batch_size': 128, 'num_rounds': 3, 'local_epochs': 2}
+Starting training...
+Epoch 1/2:   0%|                                                           | 0/235 [00:06<?, ?batch/s]
+Epoch 2/2:   0%|                                                           | 0/235 [00:00<?, ?batch/s]
+
+Epoch 2/2:   0%|                                                           | 0/235 [00:06<?, ?batch/s]
+Starting evalutation...
+[2023-12-03 20:41:22,933][fedops.client.client_fl][INFO] - train_performance - {"fl_task_id": "test", "client_mac": "19:e7:c0:91:ab:e3", "client_name": "ccl-e-server", "round": 1, "gl_model_v": 4, "train_loss": 0.7189731255490729, "train_accuracy": 0.7910333333333334, "train_f1_score": NaN, "val_loss": 3.882246283036244, "val_accuracy": 0.3251, "val_f1_score": NaN, "train_time": 19.849090576171875, "wandb_name": "client-v0(2023-12-03 19:53:29.261412)"}
+Starting evalutation...
+[2023-12-03 20:42:35,474][fedops.client.client_fl][INFO] - test - {"fl_task_id": "test", "client_mac": "19:e7:c0:91:ab:e3", "client_name": "ccl-e-server", "round": 1, "test_loss": 3.8203124728383897, "test_accuracy": 0.3343, "gl_model_v": 4, "wandb_name": "client-v0(2023-12-03 19:53:29.261412)"}
+Epoch 1/2:   0%|                                                           | 0/235 [00:00<?, ?batch/s]
+config: {'batch_size': 128, 'local_epochs': 2, 'num_rounds': 3}
+Epoch 1/2:   0%|                                                           | 0/235 [00:06<?, ?batch/s]
+Epoch 2/2:   0%|                                                           | 0/235 [00:00<?, ?batch/s]
+
+Epoch 2/2:   0%|                                                           | 0/235 [00:06<?, ?batch/s]
+Starting evalutation...
+[2023-12-03 20:43:00,766][fedops.client.client_fl][INFO] - train_performance - {"fl_task_id": "test", "client_mac": "19:e7:c0:91:ab:e3", "client_name": "ccl-e-server", "round": 2, "gl_model_v": 4, "train_loss": 0.6260885489747879, "train_accuracy": 0.8153, "train_f1_score": NaN, "val_loss": 4.287926357003707, "val_accuracy": 0.3186, "val_f1_score": NaN, "train_time": 19.768425226211548, "wandb_name": "client-v0(2023-12-03 19:53:29.261412)"}
+Starting evalutation...
+[2023-12-03 20:44:15,058][fedops.client.client_fl][INFO] - test - {"fl_task_id": "test", "client_mac": "19:e7:c0:91:ab:e3", "client_name": "ccl-e-server", "round": 2, "test_loss": 4.166052531592453, "test_accuracy": 0.3258, "gl_model_v": 4, "wandb_name": "client-v0(2023-12-03 19:53:29.261412)"}
+Epoch 1/2:   0%|                             | 0/235 [00:00<?, ?batch/s]
+config: {'local_epochs': 2, 'batch_size': 128, 'num_rounds': 3}
+Epoch 1/2:   0%|                             | 0/235 [00:06<?, ?batch/s]
+
+Epoch 2/2:   0%|                             | 0/235 [00:06<?, ?batch/s]
+Starting evalutation...
+Starting evalutation...
+[2023-12-03 20:44:41,597][fedops.client.client_fl][INFO] - train_performance - {"fl_task_id": "test", "client_mac": "19:e7:c0:91:ab:e3", "client_name": "ccl-e-server", "round": 3, "gl_model_v": 4, "train_loss": 0.5378596257656179, "train_accuracy": 0.8337, "train_f1_score": NaN, "val_loss": 4.842478329622293, "val_accuracy": 0.31, "val_f1_score": NaN, "train_time": 19.690838098526, "wandb_name": "client-v0(2023-12-03 19:53:29.261412)"}
+Starting evalutation...
+[2023-12-03 20:45:53,949][fedops.client.client_fl][INFO] - test - {"fl_task_id": "test", "client_mac": "19:e7:c0:91:ab:e3", "client_name": "ccl-e-server", "round": 3, "test_loss": 4.626487511622755, "test_accuracy": 0.328, "gl_model_v": 4, "wandb_name": "client-v0(2023-12-03 19:53:29.261412)"}
+DEBUG flwr 2023-12-03 20:45:58,596 | connection.py:139 | gRPC channel closed
+INFO flwr 2023-12-03 20:45:58,597 | app.py:215 | Disconnect and shut down
+[2023-12-03 20:45:58,596][flwr][DEBUG] - gRPC channel closed
+[2023-12-03 20:45:58,597][flwr][INFO] - Disconnect and shut down
+[2023-12-03 20:45:58,598][root][INFO] - fl learning finished
