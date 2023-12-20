@@ -1,0 +1,48 @@
+[2023-12-20 11:15:04,509][root][INFO] - label_values: [[0, 3576], [1, 4025], [2, 3556], [3, 3637], [4, 3570], [5, 3302], [6, 3586], [7, 3699], [8, 3474], [9, 3575]]
+[32mINFO[39m:     127.0.0.1:45044 - "[1mGET /online HTTP/1.1[22m" [32m200 OK
+[2023-12-20 11:15:04,556][flwr][INFO] - Opened insecure gRPC connection (no certificates were passed)
+[2023-12-20 11:15:04,558][flwr][DEBUG] - ChannelConnectivity.IDLE
+[2023-12-20 11:15:04,559][flwr][DEBUG] - ChannelConnectivity.CONNECTING
+[2023-12-20 11:15:04,566][flwr][DEBUG] - ChannelConnectivity.READY
+config: {'batch_size': 128, 'local_epochs': 1, 'num_rounds': 2}
+Starting training...
+INFO flwr 2023-12-20 11:15:04,556 | grpc.py:49 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2023-12-20 11:15:04,558 | connection.py:42 | ChannelConnectivity.IDLE
+DEBUG flwr 2023-12-20 11:15:04,559 | connection.py:42 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2023-12-20 11:15:04,566 | connection.py:42 | ChannelConnectivity.READY
+
+
+
+Epoch 1/1:  71%|████▉  | 200/282 [00:07<00:01, 45.56batch/s]
+Epoch 1/1: 100%|███████| 282/282 [00:09<00:00, 30.83batch/s]
+
+
+Testing:  73%|██████▌  | 207/282 [00:04<00:01, 47.35batch/s]
+Testing: 100%|█████████| 282/282 [00:05<00:00, 48.97batch/s]
+Testing:  28%|███        | 26/94 [00:00<00:01, 49.90batch/s]
+
+Testing: 100%|███████████| 94/94 [00:01<00:00, 49.53batch/s]
+Starting evalutation...
+Testing:  27%|██▉        | 25/94 [00:00<00:01, 48.69batch/s]
+
+Testing: 100%|███████████| 94/94 [00:01<00:00, 48.65batch/s]
+config: {'batch_size': 128, 'num_rounds': 2, 'local_epochs': 1}
+Starting training...
+
+
+Epoch 1/1:  94%|██████▌| 265/282 [00:05<00:00, 47.55batch/s]
+Epoch 1/1: 100%|███████| 282/282 [00:05<00:00, 47.49batch/s]
+
+Testing: 100%|█████████| 282/282 [00:05<00:00, 49.38batch/s]
+Testing:   0%|                    | 0/94 [00:00<?, ?batch/s]
+
+Testing: 100%|███████████| 94/94 [00:01<00:00, 49.40batch/s]
+[2023-12-20 11:15:50,474][fedops.client.client_fl][INFO] - train_performance - {"fl_task_id": "gyom1204", "client_mac": "19:e7:c0:91:ab:e3", "client_name": "ccl-e-server", "round": 2, "gl_model_v": 1, "train_loss": 0.02909235384212873, "train_accuracy": 0.9916944444444444, "train_f1_score": 0.9916839111286012, "val_loss": 0.04770396200028506, "val_accuracy": 0.98575, "val_f1_score": 0.9857297434103321, "train_time": 13.664289236068726, "wandb_name": "client-v0(2023-12-20 11:13:25.187391)"}
+Starting evalutation...
+Testing:  61%|██████▋    | 57/94 [00:01<00:00, 50.14batch/s]
+[2023-12-20 11:15:59,220][fedops.client.client_fl][INFO] - test - {"fl_task_id": "gyom1204", "client_mac": "19:e7:c0:91:ab:e3", "client_name": "ccl-e-server", "round": 2, "test_loss": 0.050020733441998984, "test_accuracy": 0.9841666666666666, "gl_model_v": 1, "wandb_name": "client-v0(2023-12-20 11:13:25.187391)"}
+[2023-12-20 11:15:59,259][flwr][DEBUG] - gRPC channel closed
+[2023-12-20 11:15:59,260][flwr][INFO] - Disconnect and shut down
+Testing: 100%|███████████| 94/94 [00:01<00:00, 50.08batch/s]
+DEBUG flwr 2023-12-20 11:15:59,259 | connection.py:139 | gRPC channel closed
+INFO flwr 2023-12-20 11:15:59,260 | app.py:215 | Disconnect and shut down

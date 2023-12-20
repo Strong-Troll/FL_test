@@ -1,0 +1,39 @@
+2023-12-20 11:14:57,841 INFO    MainThread:3733409 [wandb_setup.py:_flush():76] Current SDK version is 0.15.10
+2023-12-20 11:14:57,842 INFO    MainThread:3733409 [wandb_setup.py:_flush():76] Configure stats pid to 3733409
+2023-12-20 11:14:57,842 INFO    MainThread:3733409 [wandb_setup.py:_flush():76] Loading settings from /home/ccl/.config/wandb/settings
+2023-12-20 11:14:57,842 INFO    MainThread:3733409 [wandb_setup.py:_flush():76] Loading settings from /home/ccl/Desktop/FedOps_test/wandb/settings
+2023-12-20 11:14:57,842 INFO    MainThread:3733409 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-12-20 11:14:57,842 INFO    MainThread:3733409 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'client_main.py', 'program': '/home/ccl/Desktop/FedOps_test/client_main.py'}
+2023-12-20 11:14:57,842 INFO    MainThread:3733409 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-12-20 11:14:57,842 INFO    MainThread:3733409 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-12-20 11:14:57,842 INFO    MainThread:3733409 [wandb_init.py:_log_setup():524] Logging user logs to /home/ccl/Desktop/FedOps_test/wandb/run-20231220_111457-wtpm1bfl/logs/debug.log
+2023-12-20 11:14:57,842 INFO    MainThread:3733409 [wandb_init.py:_log_setup():525] Logging internal logs to /home/ccl/Desktop/FedOps_test/wandb/run-20231220_111457-wtpm1bfl/logs/debug-internal.log
+2023-12-20 11:14:57,842 INFO    MainThread:3733409 [wandb_init.py:init():564] calling init triggers
+2023-12-20 11:14:57,842 INFO    MainThread:3733409 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0, 'optimizer': '', 'dataset': '', 'model_architecture': '', 'batch_size': 0, 'epochs': 0, 'num_rounds': 0}
+2023-12-20 11:14:57,842 INFO    MainThread:3733409 [wandb_init.py:init():614] starting backend
+2023-12-20 11:14:57,842 INFO    MainThread:3733409 [wandb_init.py:init():618] setting up manager
+2023-12-20 11:14:57,845 INFO    MainThread:3733409 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-12-20 11:14:57,847 INFO    MainThread:3733409 [wandb_init.py:init():624] backend started and connected
+2023-12-20 11:14:57,855 INFO    MainThread:3733409 [wandb_init.py:init():715] updated telemetry
+2023-12-20 11:14:57,893 INFO    MainThread:3733409 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2023-12-20 11:14:58,859 INFO    MainThread:3733409 [wandb_run.py:_on_init():2220] communicating current version
+2023-12-20 11:14:58,961 INFO    MainThread:3733409 [wandb_run.py:_on_init():2229] got version response upgrade_message: "wandb version 0.16.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-12-20 11:14:58,962 INFO    MainThread:3733409 [wandb_init.py:init():799] starting run threads in backend
+2023-12-20 11:15:04,505 INFO    MainThread:3733409 [wandb_run.py:_console_start():2199] atexit reg
+2023-12-20 11:15:04,506 INFO    MainThread:3733409 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2023-12-20 11:15:04,506 INFO    MainThread:3733409 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2023-12-20 11:15:04,506 INFO    MainThread:3733409 [wandb_run.py:_redirect():2144] Redirects installed.
+2023-12-20 11:15:04,508 INFO    MainThread:3733409 [wandb_init.py:init():840] run started, returning control to user process
+2023-12-20 11:15:05,546 INFO    ThreadPoolExecutor-0_0:3733409 [wandb_run.py:_config_callback():1324] config_cb None None {'batch_size': 128, 'epochs': 1, 'num_rounds': 2}
+2023-12-20 11:15:36,808 INFO    ThreadPoolExecutor-0_0:3733409 [wandb_run.py:_config_callback():1324] config_cb None None {'batch_size': 128, 'epochs': 1, 'num_rounds': 2}
+2023-12-20 11:15:59,326 INFO    MainThread:3733409 [wandb_run.py:_config_callback():1324] config_cb None None {'learning_rate': 0.001, 'optimizer': 'Adam', 'loss_function': 'CrossEntropyLoss()', 'dataset': 'MNIST', 'model_architecture': 'MNISTClassifier'}
+2023-12-20 11:15:59,331 INFO    MainThread:3733409 [wandb_run.py:_config_callback():1324] config_cb ('_wandb', 'visualize', 'Data Lable Histogram') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/bar/v0', 'fieldSettings': {'label': 'label', 'value': 'data_size'}, 'stringSettings': {'title': 'Data Size Distribution'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Data Lable Histogram_table'}], 'fields': []}]}]}}} None
+2023-12-20 11:16:00,147 INFO    MainThread:3733409 [wandb_run.py:_finish():1934] finishing run yangsemo/MNIST_gyom1204/wtpm1bfl
+2023-12-20 11:16:00,147 INFO    MainThread:3733409 [wandb_run.py:_atexit_cleanup():2168] got exitcode: 0
+2023-12-20 11:16:00,147 INFO    MainThread:3733409 [wandb_run.py:_restore():2151] restore
+2023-12-20 11:16:00,148 INFO    MainThread:3733409 [wandb_run.py:_restore():2157] restore done
+2023-12-20 11:16:11,361 INFO    MainThread:3733409 [wandb_run.py:_footer_history_summary_info():3557] rendering history
+2023-12-20 11:16:11,362 INFO    MainThread:3733409 [wandb_run.py:_footer_history_summary_info():3589] rendering summary
+2023-12-20 11:16:11,371 INFO    MainThread:3733409 [wandb_run.py:_footer_sync_info():3516] logging synced files
