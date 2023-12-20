@@ -30,6 +30,6 @@ server:
 
 wandb: 
   use: true # Whether to use wandb
-  key: '001470b62268462c3c179bb6ac7ce0dfc64b657b' # your wandb api key
-  account: 'gyom1204'
+  key: 'eb56a89a7457704c55789c584a3546c707d737f8' # your wandb api key
+  account: 'yangsemo'
   project: '${dataset.name}_${task_id}'
